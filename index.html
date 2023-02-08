@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Tentando fazer algo q eu me sinta util</title>
+    <meta charset="UTF-8">
+    <script src="OpenLayers-2.13.1/OpenLayers.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+</head>
+<body onload="showJP()">
+    <header >
+        <div id="Map"></div>
+        <form id="MapData">
+            <div class="row">
+                <label for="LAT">Latitude</label>
+                <input type="number" id="LAT"><br>
+            </div>
+            <div class="row">
+                <label for="LON">Longitude</label>
+                <input type="number" id="LON">
+            </div>
+            <div class="row">
+                <button type="button" onclick="getLocation()">Posição atual</button>
+            </div>
+        </form>
+    </header>
+    <nav></nav>
+    <button  type="button" onload="relogio()">Display Date and Time.</button>
+    <textarea id="DateTime" disabled></textarea>
+    <!-- <iframe src="https://www.w3schools.com/html/html_iframe.asp" height="200" width="300" title="Iframe Example"></iframe> -->
+    
+</body>
+</html>
